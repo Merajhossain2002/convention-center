@@ -12,6 +12,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
     />
+
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="styles/style.css" />
     <!---------------
       font awesome
     ----------------->
@@ -21,48 +24,47 @@
     ></script>
   </head>
   <body>
-    <header class="container">
-      <div class="row">
-        <nav class="navbar navbar-expand-lg sticky-top bg-light p-5">
-          <div class="container-fluid">
-            <a class="navbar-brand text-md-start" href="index.html">
-              Abacus Convention Center</a
-            >
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"> Contact </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Subscribe</a>
-                </li>
-              </ul>
-            </div>
+    <header class="container sticky-top">
+      <nav class="navbar navbar-expand-md nav-light bg-white p-3 shadow">
+        <div class="container-fluid">
+          <a class="navbar-brand text-md-start" href="index.html">
+            Abacus
+            <span class="d-none d-md-inline-block">Convention Center</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"> Contact </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Subscribe</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
-<!--\\\\\\\\\\\\\\\\
+    <!--\\\\\\\\\\\\\\\\
   sliding banner
 ////////////////////-->
 
@@ -96,33 +98,51 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="5000">
-            <img src="/images/banner.png" class="d-block w-100 img-fluid" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <img
+              src="/images/banner.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption">
               <h5>First slide label</h5>
-              <p>
+              <p class="d-none d-md-block">
                 Some representative placeholder content for the first slide.
               </p>
-              <button class="btn btn-outline-dark">BOOK NOW</button>
+              <button class="btn book-btn rounded d-none d-md-inline-block">
+                BOOK NOW
+              </button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="/images/banner.png" class="d-block w-100 img-fluid" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <img
+              src="/images/banner.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption">
               <h5>Second slide label</h5>
-              <p>
+              <p class="d-none d-md-block">
                 Some representative placeholder content for the second slide.
               </p>
-              <button class="btn btn-outline-dark">BOOK NOW</button>
+              <button class="btn book-btn rounded d-none d-md-inline-block">
+                BOOK NOW
+              </button>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="5000">
-            <img src="/images/banner.png" class="d-block w-100 img-fluid" alt="..." />
-            <div class="carousel-caption d-none d-md-block">
+            <img
+              src="/images/banner.png"
+              class="d-block w-100 img-fluid"
+              alt="..."
+            />
+            <div class="carousel-caption">
               <h5>Third slide label</h5>
-              <p>
+              <p class="d-none d-md-block">
                 Some representative placeholder content for the third slide.
               </p>
-              <button class="btn btn-outline-dark">BOOK NOW</button>
+              <button class="btn book-btn rounded d-none d-md-inline-block">
+                BOOK NOW
+              </button>
             </div>
           </div>
         </div>
@@ -157,11 +177,11 @@
         <div class="col-lg-6 col-md-6 col-sm-12">
           <h1>Every moment is Precious</h1>
           <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
           </p>
-          <button class="btn btn-primary ">
+          <button class="btn btn-primary">
             Explore Our Album <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
@@ -177,22 +197,46 @@
           <div class="col-lg-4">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Free</h5>
-                <h6 class="card-price text-center">$0<span class="period">/month</span></h6>
-                <hr>
+                <h5 class="card-title text-muted text-uppercase text-center">
+                  Free
+                </h5>
+                <h6 class="card-price text-center">
+                  $0<span class="period">/month</span>
+                </h6>
+                <hr />
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Unlimited
-                    Private Projects</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Dedicated
-                    Phone Support</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Free Subdomain
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Single User
                   </li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
-                    Reports</li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>5GB
+                    Storage
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Unlimited Public Projects
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Community Access
+                  </li>
+                  <li class="text-muted">
+                    <span class="fa-li"><i class="fas fa-times"></i></span
+                    >Unlimited Private Projects
+                  </li>
+                  <li class="text-muted">
+                    <span class="fa-li"><i class="fas fa-times"></i></span
+                    >Dedicated Phone Support
+                  </li>
+                  <li class="text-muted">
+                    <span class="fa-li"><i class="fas fa-times"></i></span>Free
+                    Subdomain
+                  </li>
+                  <li class="text-muted">
+                    <span class="fa-li"><i class="fas fa-times"></i></span
+                    >Monthly Status Reports
+                  </li>
                 </ul>
                 <div class="d-grid">
                   <a href="#" class="btn btn-primary text-uppercase">Button</a>
@@ -204,19 +248,46 @@
           <div class="col-lg-4">
             <div class="card mb-5 mb-lg-0">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Plus</h5>
-                <h6 class="card-price text-center">$9<span class="period">/month</span></h6>
-                <hr>
+                <h5 class="card-title text-muted text-uppercase text-center">
+                  Plus
+                </h5>
+                <h6 class="card-price text-center">
+                  $9<span class="period">/month</span>
+                </h6>
+                <hr />
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5 Users</strong></li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain</li>
-                  <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>Monthly Status
-                    Reports</li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    ><strong>5 Users</strong>
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>50GB
+                    Storage
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Unlimited Public Projects
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Community Access
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Unlimited Private Projects
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Dedicated Phone Support
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>Free
+                    Subdomain
+                  </li>
+                  <li class="text-muted">
+                    <span class="fa-li"><i class="fas fa-times"></i></span
+                    >Monthly Status Reports
+                  </li>
                 </ul>
                 <div class="d-grid">
                   <a href="#" class="btn btn-primary text-uppercase">Button</a>
@@ -228,20 +299,46 @@
           <div class="col-lg-4">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title text-muted text-uppercase text-center">Pro</h5>
-                <h6 class="card-price text-center">$49<span class="period">/month</span></h6>
-                <hr>
+                <h5 class="card-title text-muted text-uppercase text-center">
+                  Pro
+                </h5>
+                <h6 class="card-price text-center">
+                  $49<span class="period">/month</span>
+                </h6>
+                <hr />
                 <ul class="fa-ul">
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited Users</strong>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    ><strong>Unlimited Users</strong>
                   </li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private Projects</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone Support</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited</strong> Free
-                    Subdomains</li>
-                  <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status Reports</li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>150GB
+                    Storage
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Unlimited Public Projects
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Community Access
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Unlimited Private Projects
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Dedicated Phone Support
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    ><strong>Unlimited</strong> Free Subdomains
+                  </li>
+                  <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span
+                    >Monthly Status Reports
+                  </li>
                 </ul>
                 <div class="d-grid">
                   <a href="#" class="btn btn-primary text-uppercase">Button</a>
